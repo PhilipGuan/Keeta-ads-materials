@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Keeta Advertising — Merchant One-Pager (UAE)</title>
 <style>
   @page { size: A4; margin: 0; }
@@ -102,6 +103,44 @@
   @media (prefers-reduced-motion: reduce) { .cta .btn.cta-btn { animation: none; } }
   .fine { margin-top: 1.6mm; font-size: 6.2pt; color: #9AA0A8; line-height: 1.4; }
   .spacer { flex: 1; }
+
+  /* ===== Responsive (screen only — PDF export uses 794px viewport, stays on the A4 fixed layout) ===== */
+  /* Desktop display: present the A4 sheet as a centered card; do not change any content dimensions, PDF export unaffected (794 < 900) */
+  @media screen and (min-width: 900px) {
+    html, body { width: auto; }
+    body { background: #EFEDE4; padding: 24px 0; display: flex; justify-content: center; }
+    .page { box-shadow: 0 10px 44px rgba(23,24,28,.14); border-radius: 3mm; }
+  }
+  /* Mobile: lift A4 constraints, reflow to a single-column flow, font sizes geared toward thumb reading */
+  @media screen and (max-width: 767px) {
+    html, body { width: 100%; }
+    .page { width: 100%; height: auto; min-height: 100vh; padding: 4mm 4mm 7mm; }
+    .header { padding: 5mm 4.5mm 4.5mm; }
+    .header h1 { font-size: 17pt; }
+    .header p.sub { font-size: 9.6pt; max-width: none; }
+    .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+    .kpi { padding: 3mm 2mm; }
+    .kpi b { font-size: 12.5pt; white-space: normal; }
+    .kpi > span { font-size: 8pt; }
+    .props, .obj { grid-template-columns: 1fr; gap: 2.5mm; }
+    .prop { padding: 3.2mm 3.5mm; }
+    .prop p { font-size: 8.8pt; }
+    .obj .o { padding: 3.2mm 3.5mm; }
+    .obj .a { font-size: 8.8pt; }
+    .placement { grid-template-columns: 1fr; gap: 3.5mm; }
+    .shot .cap { font-size: 8.5pt; }
+    .placement-points li { font-size: 9.4pt; margin-bottom: 2mm; }
+    .placement-points b { font-size: 9.8pt; }
+    .duo { grid-template-columns: 1fr; gap: 3mm; }
+    .row-item { font-size: 9.2pt; }
+    .row-item b { font-size: 9.8pt; }
+    .roi-strip p { font-size: 8.8pt; }
+    .cta { flex-direction: column; align-items: stretch; text-align: center; gap: 3.2mm; padding: 4mm 5mm; }
+    .cta .go p { font-size: 9pt; }
+    .cta .btn { text-align: center; padding: 3.6mm 6mm; font-size: 11.5pt; }
+    .lang-btn { font-size: 10pt; padding: 1.8mm 4.5mm; }
+    .fine { font-size: 8pt; }
+  }
 </style>
 </head>
 <body>

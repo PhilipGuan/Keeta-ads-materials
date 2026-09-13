@@ -226,18 +226,16 @@
       <b data-i18n="ctab">Ready to boost? Go live in 3 clicks.</b>
       <p data-i18n="ctap">Keeta Partner App or Web&nbsp;&nbsp;→&nbsp;&nbsp;Advertising&nbsp;&nbsp;→&nbsp;&nbsp;Activate&nbsp;&nbsp;·&nbsp;&nbsp;Questions? Contact your Keeta BD — we're more than happy to help!</p>
     </div>
-    <a id="ctaBtn" class="btn cta-btn" data-i18n="cta" href="https://philipguan.github.io/Keeta-ads-materials/bah/" target="_blank" rel="noopener">Activate Advertising</a>
+    <a id="ctaBtn" class="btn cta-btn" data-i18n="cta" href="https://merchant.mykeeta.com/pc/login?region=BH" target="_blank" rel="noopener">Activate Advertising</a>
   </div>
   <div class="fine" data-i18n="fine">*ROI benchmark is a market reference range; results vary by category, price band and season. Budget subject to merchant backend display. Clicks are charged even if the user does not place an order; no refund policy. Screenshots are for illustration only — the actual app display prevails. Source: Keeta Advertising Product Manual.</div>
 
 </div>
 
 <script>
-/* Country config — currency reserved for future amount-bearing content; region reserved for merchant portal link */
+/* Country config — currency reserved for future amount-bearing content; region drives the login link */
 var CONFIG = { country: "BAH", currency: "BHD", region: "BH" };
-/* CTA 指向线上物料页；BH 商家门户（region=BH）上线后可切回：
-   var CTA_URL = "https://merchant.mykeeta.com/pc/login?region=" + CONFIG.region; */
-var CTA_URL = "https://philipguan.github.io/Keeta-ads-materials/bah/";
+var LOGIN_URL = "https://merchant.mykeeta.com/pc/login?region=" + CONFIG.region;
 
 var I18N = {
   en: {
@@ -347,7 +345,7 @@ function applyLang(l) {
   document.getElementById("langBtn").textContent = dict.btn;
 }
 function toggleLang() { applyLang(lang === "en" ? "ar" : "en"); }
-document.getElementById("ctaBtn").href = CTA_URL;
+document.getElementById("ctaBtn").href = LOGIN_URL;
 </script>
 </body>
 </html>

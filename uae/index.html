@@ -102,6 +102,7 @@
   .cta .btn.cta-btn:hover { animation-play-state: paused; transform: scale(1.07); box-shadow: 0 1.5mm 4mm rgba(255,209,0,.35); }
   @media (prefers-reduced-motion: reduce) { .cta .btn.cta-btn { animation: none; } }
   .fine { margin-top: 1.6mm; font-size: 6.2pt; color: #9AA0A8; line-height: 1.4; }
+  .verstamp { margin-top: 1.2mm; font-size: 5.5pt; color: #98938A; text-align: center; letter-spacing: .02em; }
   .spacer { flex: 1; }
 
   /* ===== Responsive (screen only — PDF export uses 794px viewport, stays on the A4 fixed layout) ===== */
@@ -203,7 +204,7 @@
     <div class="card return">
       <div class="hd" data-i18n="ret_hd">📈 Your return — why it pays off</div>
       <div class="bd">
-        <div class="roi-strip"><div class="big" dir="ltr">4x+</div><p data-i18n="roi">Market ROI reference range, varying by category and price band. Ad orders = orders placed within 7 days after an ad click.</p></div>
+        <div class="roi-strip"><div class="big" dir="ltr">4x+</div><p data-i18n="roi">Market ROI reference range, varying by category and price band. Ad orders = orders placed within a reasonable session after an ad click.</p></div>
         <div class="row-item"><span class="dot"></span><div data-i18n="r1"><b>Reach new customers</b> <span class="gl">who would otherwise never see your store — more exposure, more first orders, more reviews.</span></div></div>
         <div class="row-item"><span class="dot"></span><div data-i18n="r2"><b>Early-mover advantage.</b> <span class="gl">Keeta is growing fast with a high share of new users — less ad competition and better acquisition value.</span></div></div>
         <div class="row-item"><span class="dot"></span><div data-i18n="r3"><b>New-merchant support.</b> <span class="gl">Traffic support in the first 2–3 weeks, plus vouchers and free-trial credit when available — stack with promotions for a bigger boost.</span></div></div>
@@ -229,6 +230,7 @@
     <a id="ctaBtn" class="btn cta-btn" data-i18n="cta" href="https://merchant.mykeeta.com/pc/login?region=AE" target="_blank" rel="noopener">Activate Advertising</a>
   </div>
   <div class="fine" data-i18n="fine">*ROI benchmark is a market reference range; results vary by category, price band and season. Budget subject to merchant backend display. Clicks are charged even if the user does not place an order; no refund policy. Screenshots are for illustration only — the actual app display prevails. Source: Keeta Advertising Product Manual.</div>
+  <div class="verstamp">OP-UAE-BAH-ROI-v1.1 · 2026-09-16</div>
 
 </div>
 
@@ -269,7 +271,7 @@ var I18N = {
     "c4": "<b>Automatic bidding.</b> <span class='gl'>The system adjusts CPC by competition and your budget to maximise conversions.</span>",
     "c5": "<b>Simple billing.</b> <span class='gl'>Daily cost is auto-deducted from earnings at noon next day (T+1); ad vouchers offset part of the cost.</span>",
     "ret_hd": "📈 Your return — why it pays off",
-    "roi": "Market ROI reference range, varying by category and price band. Ad orders = orders placed within 7 days after an ad click.",
+    "roi": "Market ROI reference range, varying by category and price band. Ad orders = orders placed within a reasonable session after an ad click.",
     "r1": "<b>Reach new customers</b> <span class='gl'>who would otherwise never see your store — more exposure, more first orders, more reviews.</span>",
     "r2": "<b>Early-mover advantage.</b> <span class='gl'>Keeta is growing fast with a high share of new users — less ad competition and better acquisition value.</span>",
     "r3": "<b>New-merchant support.</b> <span class='gl'>Traffic support in the first 2–3 weeks, plus vouchers and free-trial credit when available — stack with promotions for a bigger boost.</span>",
@@ -315,7 +317,7 @@ var I18N = {
     "c4": "<b>Automatic bidding.</b> <span class='gl'>يضبط النظام CPC حسب المنافسة وميزانيتك لتعظيم التحويلات.</span>",
     "c5": "<b>فوترة بسيطة.</b> <span class='gl'>تُخصم التكلفة اليومية تلقائيًا من الأرباح ظهر اليوم التالي (T+1)؛ وقسائم الإعلانات تخفّض جزءًا من التكلفة.</span>",
     "ret_hd": "📈 عائدك — لماذا يستحق الاستثمار",
-    "roi": "نطاق ROI المرجعي في السوق، ويختلف حسب الفئة ونطاق السعر. طلبات الإعلان = الطلبات خلال 7 أيام بعد نقرة إعلانية.",
+    "roi": "نطاق ROI المرجعي في السوق، ويختلف حسب الفئة ونطاق السعر. طلبات الإعلان = الطلبات التي تمت خلال جلسة معقولة بعد النقر على الإعلان.",
     "r1": "<b>اوصل إلى عملاء جدد</b> <span class='gl'>لم يكونوا سيرون متجرك إطلاقًا — ظهور أكثر، وطلبات أولى أكثر، وتقييمات أكثر.</span>",
     "r2": "<b>ميزة الطليعة.</b> <span class='gl'>تنمو Keeta بسرعة مع نسبة عالية من المستخدمين الجدد — منافسة إعلانية أقل وقيمة استقطاب أفضل.</span>",
     "r3": "<b>دعم المتاجر الجديدة.</b> <span class='gl'>دعم للزيارات في أول 2–3 أسابيع، مع قسائم ورصيد تجريبي عند توفرها — وادمجها مع العروض الترويجية لنتيجة أكبر.</span>",
